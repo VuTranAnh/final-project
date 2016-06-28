@@ -34,7 +34,7 @@ header {
 header h1 {
 	font-size: 50px;
 }
-.container {
+.body-wrapper {
 	background: url('../images/white_brick_wall.png');
 	border-left: 4px solid;
 	width: 700px;
