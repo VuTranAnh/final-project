@@ -1,3 +1,51 @@
-<div ng-controller="AboutController">
+<div ng-controller="AboutController as abCtrl">
 
+	<header>
+		<h1>{{abCtrl.profile.name}}</h1>
+		<h3>Web developer</h3>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="content">
+				<h3>About me</h3>
+				
+				<img ng-src="{{abCtrl.profile.imageUrl}}">
+				<p>{{abCtrl.profile.about_me}}</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<ul>
+					<li>
+						<a href="https://facebook.com/profile.php?id=100003145278607" target="_blank">
+							<ng-md-icon icon="facebook-box" size="32"></ng-md-icon><span>Facebook</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://github.com/VuTranAnh" target="_blank">
+							<ng-md-icon icon="github-box" size="32"></ng-md-icon><span>Github</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#/contact">
+							<ng-md-icon icon="email" size="32"></ng-md-icon><span>Email</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="more">
+				<a href="#/showcase">More about me..</a>
+			</div>
+		</div>
+
+	</div>
+	
 </div>
+

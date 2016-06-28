@@ -1,7 +1,8 @@
 'use strict';
 var myApp = angular.module('myApp', [
-	'ngRoute',
-	'myControllers'
+	'ngRoute', // using route for this app
+	'myControllers', // contains all controllers
+	'ngMdIcons' // using mdIcons
 	]);
 
 myApp.config(['$routeProvider', function ($routeProvider) {

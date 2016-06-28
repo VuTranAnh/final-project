@@ -15,3 +15,72 @@
 @viewport {
   width: device-width;
 }
+
+body {
+	background: url('../images/random_grey_variations.png');
+	font-family: 'Handlee', cursive;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+}
+/*style for about page*/
+header {
+	color: white;
+	text-align: center;
+	margin-top: 50px; 
+}
+
+header h1 {
+	font-size: 50px;
+}
+.container {
+	background: url('../images/white_brick_wall.png');
+	border-left: 4px solid;
+	width: 700px;
+}
+
+.content {
+	display: inline-block;
+	width: 400px;
+	height: 460px;
+	margin-left: 20px;
+}
+
+.content img {
+	float: left;
+	height: 150px;
+	width: 200px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.category {
+	display: inline-block;
+	float: right;
+	margin-top: -410px;
+	margin-right: 105px;
+}
+
+.category ul {
+	list-style: none;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #888;
+}
+.category ng-md-icon {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 4px 2px;
+	border-left: 4px solid black;
+} /* align icons list and text */
+
+.more {
+	text-align: center;
+}
