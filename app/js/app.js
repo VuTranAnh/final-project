@@ -15,9 +15,5 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'view/showcase.html',
 			controller: 'ShowcaseController'
 		})
-		.when('/contact', {
-			templateUrl: 'view/contact.html', 
-			controller: 'ContactController'
-		})
 		.otherwise({redirectTo: '/about'});
 }]);

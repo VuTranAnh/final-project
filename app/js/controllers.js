@@ -21,8 +21,4 @@ myControllers.controller('ShowcaseController', ['$scope', '$route',
 	}
 ]);
 
-myControllers.controller('ContactController', ['$scope', '$route',
-	function ($scope, $route) {
-		$scope.template = $route.current.templateUrl;	
-	}
-]);
+
