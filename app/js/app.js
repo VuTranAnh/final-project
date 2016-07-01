@@ -2,7 +2,8 @@
 var myApp = angular.module('myApp', [
 	'ngRoute', // using route for this app
 	'myControllers', // contains all controllers
-	'ngMdIcons' // using mdIcons
+	'ngMdIcons', // using mdIcons
+	'ngAnimate' //animations
 	]);
 
 myApp.config(['$routeProvider', function ($routeProvider) {

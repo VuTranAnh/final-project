@@ -19,7 +19,7 @@
 body {
 	background: url('../images/random_grey_variations.png');
 	font-family: 'Handlee', cursive;
-
+	overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -102,6 +102,8 @@ a:hover {
 
 /*style for showcase page*/
 
+
+
 .to_do_list p {
 	display: inline-block;
 	padding-left: 10px;
@@ -110,4 +112,40 @@ a:hover {
 .to_do_list .status {
 	float: right;
 	margin-right: 300px;
+}
+/* animation slide Right to Left when entering page */
+
+@keyframes slideInRight {
+    from { transform:translateX(100%); opacity: 0 }
+    to { transform: translateX(0); opacity: 1;  }
+}
+/* animation slide Left to Right when leaving page */
+
+@keyframes slideOutRight {
+    from { transform:translateX(0); opacity: 1;}
+    to { transform: translateX(100%); opacity: 0; }
+}
+
+.about.ng-enter {
+  animation: slideInRight 1s both ease-in;
+}
+
+.about.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.about.ng-leave {
+	animation: slideOutRight 0.5s both ease-in;
+}
+
+.showcase.ng-enter {
+	animation: slideInRight 1s both ease-in;
+}
+
+.showcase.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.showcase.ng-leave {
+	animation: slideOutRight 0.5s both ease-in;
 }
