@@ -5,7 +5,14 @@
 	</header>
 	<div class="container body-wrapper">
 		<div class="row">
-
+			<div class="to_do_list">
+				<ol>
+					<li ng-repeat="l in list">
+						<p>{{l.thing}}</p>
+						<p class="status">{{l.status}}</p>
+					</li>
+				</ol>
+			</div>
 		</div>
 	</div>
 </div>

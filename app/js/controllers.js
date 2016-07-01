@@ -15,9 +15,13 @@ myControllers.controller('AboutController', ['$scope', '$route',
 	}
 ]);
 
-myControllers.controller('ShowcaseController', ['$scope', '$route',
-	function ($scope, $route) {
+myControllers.controller('ShowcaseController', ['$scope', '$route', '$http',
+	function ($scope, $route, $http) {
 		$scope.template = $route.current.templateUrl;	
+		$http.get('to-do-list.json').then(function (response) {
+			$scope.list = response.data;
+
+		});
 	}
 ]);
 
