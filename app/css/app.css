@@ -46,7 +46,7 @@ header h1 {
 	width: 700px;
 	height: 480px;
   box-shadow: 10px 10px 5px #333;
-	color: #404751;
+	color: #000;
 }
 
 .content {
@@ -96,13 +96,18 @@ a:hover {
 	border-left: 5px solid #404751;
 } /* align icons list and text */
 
+.category ng-md-icon:hover {
+	fill: #888;
+}
 .more {
 	text-align: center;
 }
 
 /*style for showcase page*/
 
-
+.to_do_list ol {
+	margin-top: 20px;
+}
 
 .to_do_list p {
 	display: inline-block;
@@ -113,6 +118,15 @@ a:hover {
 	float: right;
 	margin-right: 300px;
 }
+
+.thought {
+	text-align: center;
+	margin-top: 50px;
+	
+}
+
+
+
 /* animation slide Right to Left when entering page */
 
 @keyframes slideInRight {
@@ -126,6 +140,7 @@ a:hover {
     to { transform: translateX(100%); opacity: 0; }
 }
 
+/* animation for About page */
 .about.ng-enter {
   animation: slideInRight 1s both ease-in;
 }
@@ -138,6 +153,7 @@ a:hover {
 	animation: slideOutRight 0.5s both ease-in;
 }
 
+/* animation for Showcase page*/
 .showcase.ng-enter {
 	animation: slideInRight 1s both ease-in;
 }
